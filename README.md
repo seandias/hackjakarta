@@ -1,1 +1,1 @@
-# the disease_to_system file just shows how the function works. There will be an api that takes in the symptoms keyed in by the patient/family member and it will output a list of possible emergencies they should be checked for in order to help the paramedics with their assessment
+# 1.The disease_to_system file just shows how the function works. There will be an api that takes in the symptoms keyed in by the patient/family member and it will output a list of possible emergencies they should be checked for in order to help the paramedics with their assessment
