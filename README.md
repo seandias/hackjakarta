@@ -1,1 +1,2 @@
 # 1.The disease_to_system file just shows how the function works. There will be an api that takes in the symptoms keyed in by the patient/family member and it will output a list of possible emergencies they should be checked for in order to help the paramedics with their assessment
+# 2. The hospital_locater file is built using google maps api to find the hospitals near you so that in the case that the patient does not choose a particular hospital he/she will be brought to the nearest hospital.
