@@ -1,2 +1,4 @@
-# 1.The disease_to_system file just shows how the function works. There will be an api that takes in the symptoms keyed in by the patient/family member and it will output a list of possible emergencies they should be checked for in order to help the paramedics with their assessment
-# 2. The hospital_locater file is built using google maps api to find the hospitals near you so that in the case that the patient does not choose a particular hospital he/she will be brought to the nearest hospital.
+1.The disease_to_system file just shows how the function works. There will be an api that takes in the symptoms keyed in by the patient/family member and it will output a list of possible emergencies they should be checked for in order to help the paramedics with their assessment
+2. The hospital_locater file is built using google maps api to find the hospitals near you so that in the case that the patient does not choose a particular hospital he/she will be brought to the nearest hospital.
+3. The alert_drivers file is built to continuously monitors and alerts drivers if an ambulance is on the same street and within 100 meters, using Google Maps API for real-time location and distance updates. 
+TO NOTE: google maps api can be replaced by Grab's superior mapping feature in order to make results more reliable and accurate
