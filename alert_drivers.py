@@ -42,15 +42,20 @@ def alert_drivers():
                         alerts.append({
                             "driver_id": driver['id'],
                             "ambulance_id": ambulance['id'],
-                            "distance": distance
+                            "distance": distance,
+                            "message": "Ambulance is approaching. Please move aside immediately."
+                        })
+                    elif distance <= 300:
+                        alerts.append({
+                            "driver_id": driver['id'],
+                            "ambulance_id": ambulance['id'],
+                            "distance": distance,
+                            "message": "Ambulance nearby. Please keep a lookout and try to move out of it's way."
                         })
         
-        # Display alert
+        # Display alerts
         for alert in alerts:
-            print(f"Alert: Driver {alert['driver_id']} is on the same street as Ambulance {alert['ambulance_id']} and is {alert['distance']} meters away.")
+            print(f"Alert: Driver {alert['driver_id']} is on the same street as Ambulance {alert['ambulance_id']} and is {alert['distance']} meters away. {alert['message']}")
         
-        # Wait for a short interval (5 secs) before checking again
-        time.sleep(5)  
-
-# Start the alerting system
-alert_drivers()
+        # Wait for a short interval (5 seconds) before checking again
+        time.sleep(5)
