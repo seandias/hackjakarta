@@ -2,7 +2,8 @@ import googlemaps
 import time
 from datetime import datetime
 
-gmaps = googlemaps.Client(key='YOUR_GOOGLE_MAPS_API_KEY')
+API_KEY = 'YOUR_GOOGLE_MAPS_API_KEY'
+gmaps = googlemaps.Client(key=API_KEY)
 
 # Dummy data 
 drivers = [
@@ -48,8 +49,8 @@ def alert_drivers():
         for alert in alerts:
             print(f"Alert: Driver {alert['driver_id']} is on the same street as Ambulance {alert['ambulance_id']} and is {alert['distance']} meters away.")
         
-        # Wait for a short interval before checking again
-        time.sleep(5)  # check every 5 seconds
+        # Wait for a short interval (5 secs) before checking again
+        time.sleep(5)  
 
 # Start the alerting system
 alert_drivers()
